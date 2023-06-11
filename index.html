@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js" type="module"></script>
+
+    <title>Simple MealDb App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h3 class="title title--header">find meals for your ingredients</h3>
+        <p class="quote quote--header">
+            “I know once people get connected to real food, they never change back.”
+            – Alice Waters
+        </p>
+        <form class="search">
+          <input
+            type="text"
+            class="search__field"
+            placeholder="Enter your ingredients..."
+          />
+          <button class="btn search__btn">
+              search
+          </button>
+        </form>
+        <div class="addBookmark">
+          see bookmark
+        </div>
+      </header>
+
+      <div class="search-results">
+        <h1>your search results</h1>
+        <div class="results">
+
+            <!-- <div class="spinner">
+            <svg>
+                <use href="src/img/icons.svg#icon-loader"></use>
+            </svg>
+            </div> -->
+
+            <!-- <div class="error">
+                <div>
+                <svg>
+                    <use href="src/img/icons.svg#icon-alert-triangle"></use>
+                </svg>
+                </div>
+                <p>No recipes found for your query. Please try again!</p>
+            </div> -->
+
+            
+            <!--<div class="preview">
+                <img src="https://images.unsplash.com/photo-1590080875897-b7b65b2f73d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlYW51dCUyMGJ1dHRlciUyMGNvb2tpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Test" />
+
+                <h4 class="preview__title">PeanutButter Cookies</h4>
+
+                <button class="btn--recipie">get recipe</button>
+            </div>
+
+            <div class="preview">
+                <figure class="preview__fig">
+                <img src="https://images.unsplash.com/photo-1590080875897-b7b65b2f73d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlYW51dCUyMGJ1dHRlciUyMGNvb2tpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Test" />
+                </figure>
+                <h4 class="preview__title">Chicken Biriani</h4>
+
+                <button class="btn--recipie">get recipe</button>
+            </div>-->
+        </div>
+
+         <!--<div class="pagination">
+          <button class="btn--inline pagination__btn--prev">
+            <div class="search__icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <span>Page 1</span>
+          </button>
+            <button class="btn--inline pagination__btn--next">
+              <span>Page 3</span>
+              <div class="search__icon">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+            </button>
+        </div> -->
+    
+      </div>
+      <!-- <div class="loading">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+      </div> -->
+  
+    </div>
+
+    <div class="overlay hidden">
+    </div>
+    
+    <div class="add-recipe-window hidden">
+      <!--<button class="btn--close-modal">&times;</button>
+      <div class="recipe_details">
+            <h1 class="recipe_title">Nanaimo Bars</h1>
+
+            <button class="recipe-type">Dessart</button>
+            
+            <h3 class="instruction">Instructions:</h3>
+
+            <p class="instructions_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione odio quae ipsa magnam quam officia vel dicta vitae dignissimos in obcaecati debitis commodi, sequi placeat non mollitia quaerat temporibus voluptatum nisi sint optio. Natus, fugit laborum. Earum voluptatem ratione eum magni ullam atque nobis animi temporibus laudantium repellat tempore cupiditate esse, eius nesciunt suscipit placeat perferendis, dolorem doloribus quisquam deserunt? Asperiores quibusdam libero quisquam optio est, tenetur quidem ratione, eos illum quo natus voluptatum in labore similique soluta eum nam placeat nesciunt consequatur consectetur? Fuga fugiat aspernatur temporibus nulla ipsam laborum veniam omnis, delectus labore. Veniam eum temporibus dolore.</p>
+            
+            <img class="model-img" src="https://images.unsplash.com/photo-1590080875897-b7b65b2f73d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlYW51dCUyMGJ1dHRlciUyMGNvb2tpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="image not found">
+           
+
+            <p class="link"> watch video</p>s
+      </div>-->
+      
+    </div>
+
+    <div class="bookmarkOverlay hidden">
+      <button class="btn--close-modal">&times;</button>
+      <!--<div class="preview">
+        <img src="https://images.unsplash.com/photo-1590080875897-b7b65b2f73d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlYW51dCUyMGJ1dHRlciUyMGNvb2tpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"  alt="Test" />
+
+        <h4 class="preview__title">title</h4>
+        <div class="btn-el">
+           <button class="btn--recipie">getrecipe</button>
+           <i class="fa-regular fa-bookmark"></i>
+        </div>
+     </div>-->
+    </div>
+
+  </body>
+</html>
